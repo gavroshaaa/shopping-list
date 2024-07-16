@@ -1,5 +1,5 @@
 const sendInput = document.querySelector('#input');
-const Item = document.querySelector('#items');
+const itemContainer = document.querySelector('#items');
 
 sendInput.addEventListener('keydown', function(event) {
     if (event.key == 'Enter') {
@@ -12,7 +12,7 @@ sendInput.addEventListener('keydown', function(event) {
         });
 
         if (groceriesItem != '') {
-            Item.append(newItem);
+            itemContainer.append(newItem);
         }
 
         sendInput.value = '';
